@@ -1,0 +1,113 @@
+@import '@/global/breakpoints.scss';
+
+div.Top {
+  display: flex;
+  padding: 15rem 0;
+  min-height: 100vh;
+
+  @include sm {
+    padding: 7rem 0 3rem 0;
+    min-height: auto;
+  }
+
+  div.Hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+    @include ml {
+      grid-template-columns: 1fr;
+    }
+
+    div.Text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      p.HelloWorld {
+        line-height: 28px;
+        font-size: 18px;
+        font-family: source-code-pro, Menlo, Monaco,
+          Consolas, 'Courier New', monospace;
+        font-weight: 600;
+
+        color: var(--text-dimmed);
+        margin-block-end: 4px;
+      }
+
+      h1 {
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 700;
+
+        @include sm {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 700;
+        }
+
+        span.Accent {
+          color: var(--accent-color);
+          transition: text-shadow ease 300ms;
+          text-shadow: var(--accent-color) 0 0 calc(70px * var(--glow-enabled));
+        }
+
+        &.Dimmed {
+          color: var(--text-dimmed);
+        }
+      }
+
+      p.ShortAbout {
+        margin-block-start: 16px;
+        line-height: 28px;
+        font-size: 20px;
+        color: var(--text-dimmed);
+
+        @include ml {
+          max-width: 600px;
+        }
+
+        @include sm {
+          line-height: 26px;
+          font-size: 18px;
+        }
+      }
+
+      div.Socials {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-block-start: 24px;
+        a {
+          width: 40px;
+          height: 40px;
+
+          svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--text-dimmed);
+            transition: fill ease 200ms;
+          }
+
+          &:hover svg {
+            fill: var(--text-color);
+          }
+        }
+      }
+
+    }
+
+    div.Icon {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      @include ml {
+        grid-row: 1;
+        align-items: center;
+      }
+    }
+  }
+}

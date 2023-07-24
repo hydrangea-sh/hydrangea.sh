@@ -1,0 +1,18 @@
+@import './breakpoints.scss';
+
+:root {
+  --background-color: #000000;
+  --scrollbar-color: #F1F1F1;
+  --accent-color: #aa78a6;
+  --text-color: #F1F1F1;
+  --text-dimmed: #808080;
+  --text-dimmed-more: #505050;
+  --glow-enabled: 0;
+
+  --content-clamp: 1356px;
+  --content-spacing-x: 4rem;
+
+  @include sm {
+    --content-spacing-x: 1rem;
+  }
+}
