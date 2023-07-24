@@ -1,4 +1,4 @@
-@import '@/global/breakpoints.scss';
+@import "@/global/breakpoints.scss";
 
 div.About {
   padding: 4rem 0;
@@ -70,7 +70,7 @@ div.About {
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         z-index: -1;
         top: 50%;

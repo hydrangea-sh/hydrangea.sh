@@ -1,4 +1,4 @@
-@import '@/global/breakpoints.scss';
+@import "@/global/breakpoints.scss";
 
 div.Top {
   display: flex;
@@ -29,7 +29,7 @@ div.Top {
         line-height: 28px;
         font-size: 18px;
         font-family: source-code-pro, Menlo, Monaco,
-          Consolas, 'Courier New', monospace;
+          Consolas, "Courier New", monospace;
         font-weight: 600;
 
         color: var(--text-dimmed);
@@ -95,7 +95,6 @@ div.Top {
           }
         }
       }
-
     }
 
     div.Icon {
