@@ -11,7 +11,7 @@ const About = () => {
     return (
     <Clamp className="About">
         <div className="Text">
-            <h3 id="#about">About Me</h3>
+            <h3 id="#about">About <span className="Accent">Me</span></h3>
             <p>Hey there!</p>
             <p>I'm <span className="Accent">Hydrangea</span> a software developer based in Chicago, Illinois. I specialize in developing high-quality, user-friendly websites and applications. When I'm not programming you'll find me reading One Piece, crafting video essays (coming soon), or exploring the city's food scene.</p>
             <p>As a kid, I had an obsession with playing modded Minecraft. This passion spiraled into learning Java, creating my own mods, and eventually starting my journey into learning other programming languages.</p>
