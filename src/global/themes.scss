@@ -1,0 +1,76 @@
+@import "./breakpoints.scss";
+
+:root {
+  --content-clamp: 1356px;
+  --content-spacing-x: 4rem;
+
+  @include sm {
+    --content-spacing-x: 1rem;
+  }
+
+  /* Light theme */
+  --background-color-light: #ffffff;
+  --scrollbar-color-light: #000000;
+  --accent-color-light: #000000;
+  --text-color-light: #000000;
+  --text-dimmed-light: #808080;
+  --text-dimmed-more-light: #505050;
+  --glow-enabled-light: 0;
+
+  /* Dark theme */
+  --background-color-dark: #000000;
+  --scrollbar-color-dark: #F1F1F1;
+  --accent-color-dark: #F1F1F1;
+  --text-color-dark: #F1F1F1;
+  --text-dimmed-dark: #808080;
+  --text-dimmed-more-dark: #505050;
+  --glow-enabled-dark: 0;
+
+  /* Blahaj theme */
+  --background-color-blahaj: #000000;
+  --scrollbar-color-blahaj: #F1F1F1;
+  --accent-color-blahaj: #aa78a6;
+  --text-color-blahaj: #F1F1F1;
+  --text-dimmed-blahaj: #808080;
+  --text-dimmed-more-blahaj: #505050;
+  --glow-enabled-blahaj: 0;
+
+  /* Current theme */
+  --background-color: var(--background-color-light);
+  --scrollbar-color: var(--scrollbar-color-light);
+  --accent-color: var(--accent-color-light);
+  --text-color: var(--text-color-light);
+  --text-dimmed: var(--text-dimmed-light);
+  --text-dimmed-more: var(--text-dimmed-more-light);
+  --glow-enabled: var(--glow-enabled-light);
+}
+
+.light-theme {
+  --background-color: var(--background-color-light);
+  --scrollbar-color: var(--scrollbar-color-light);
+  --accent-color: var(--accent-color-light);
+  --text-color: var(--text-color-light);
+  --text-dimmed: var(--text-dimmed-light);
+  --text-dimmed-more: var(--text-dimmed-more-light);
+  --glow-enabled: var(--glow-enabled-light);
+}
+
+.dark-theme {
+  --background-color: var(--background-color-dark);
+  --scrollbar-color: var(--scrollbar-color-dark);
+  --accent-color: var(--accent-color-dark);
+  --text-color: var(--text-color-dark);
+  --text-dimmed: var(--text-dimmed-dark);
+  --text-dimmed-more: var(--text-dimmed-more-dark);
+  --glow-enabled: var(--glow-enabled-dark);
+}
+
+.blahaj-theme {
+  --background-color: var(--background-color-blahaj);
+  --scrollbar-color: var(--scrollbar-color-blahaj);
+  --accent-color: var(--accent-color-blahaj);
+  --text-color: var(--text-color-blahaj);
+  --text-dimmed: var(--text-dimmed-blahaj);
+  --text-dimmed-more: var(--text-dimmed-more-blahaj);
+  --glow-enabled: var(--glow-enabled-blahaj);
+}
