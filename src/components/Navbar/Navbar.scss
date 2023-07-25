@@ -38,7 +38,7 @@ nav {
         bottom: 1px;
         color: var(--text-dimmed);
   
-        &.Flash {
+        &.Blink {
           animation: Strobe 2s infinite ease;
         }
       }

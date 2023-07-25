@@ -46,8 +46,8 @@ export const SpotlightProjectItems: Project[] = [
 const Projects = () => {
     return (
         <Clamp className="Projects">
-        <h3 id="#projects">Project <span>Spotlight</span></h3>
-        <p className="Subtitle">Some of the stuff I"ve created</p>
+        <h3 id="#projects">Project <span>Garden</span></h3>
+        <p className="Subtitle">Some things I've made</p>
         <div className="ProjectArea">
           {SpotlightProjectItems.map((item) => (
             <div className="ProjectItem" key={item.name}>
