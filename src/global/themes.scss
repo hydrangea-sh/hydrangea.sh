@@ -9,9 +9,9 @@
   }
 
   /* Light theme */
-  --background-color-light: #ffffff;
+  --background-color-light: #F1F1F1;
   --scrollbar-color-light: #000000;
-  --accent-color-light: #000000;
+  --accent-color-light: #aa78a6;
   --text-color-light: #000000;
   --text-dimmed-light: #808080;
   --text-dimmed-more-light: #505050;
@@ -20,29 +20,29 @@
   /* Dark theme */
   --background-color-dark: #000000;
   --scrollbar-color-dark: #F1F1F1;
-  --accent-color-dark: #F1F1F1;
+  --accent-color-dark: #aa78a6;
   --text-color-dark: #F1F1F1;
   --text-dimmed-dark: #808080;
   --text-dimmed-more-dark: #505050;
   --glow-enabled-dark: 0;
 
   /* Blahaj theme */
-  --background-color-blahaj: #000000;
+  --background-color-blahaj: #0072bc;
   --scrollbar-color-blahaj: #F1F1F1;
-  --accent-color-blahaj: #aa78a6;
+  --accent-color-blahaj: #D3F2FF;
   --text-color-blahaj: #F1F1F1;
-  --text-dimmed-blahaj: #808080;
-  --text-dimmed-more-blahaj: #505050;
+  --text-dimmed-blahaj: #B8D0D3;
+  --text-dimmed-more-blahaj: #B8D0D3;
   --glow-enabled-blahaj: 0;
 
   /* Current theme */
-  --background-color: var(--background-color-light);
-  --scrollbar-color: var(--scrollbar-color-light);
-  --accent-color: var(--accent-color-light);
-  --text-color: var(--text-color-light);
-  --text-dimmed: var(--text-dimmed-light);
-  --text-dimmed-more: var(--text-dimmed-more-light);
-  --glow-enabled: var(--glow-enabled-light);
+  --background-color: var(--background-color-blahaj);
+  --scrollbar-color: var(--scrollbar-color-blahaj);
+  --accent-color: var(--accent-color-blahaj);
+  --text-color: var(--text-color-blahaj);
+  --text-dimmed: var(--text-dimmed-blahaj);
+  --text-dimmed-more: var(--text-dimmed-more-blahaj);
+  --glow-enabled: var(--glow-enabled-blahaj);
 }
 
 .light-theme {
