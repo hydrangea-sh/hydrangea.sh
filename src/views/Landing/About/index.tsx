@@ -2,6 +2,8 @@ import Clamp from "@/components/Clamp";
 
 import "./About.scss"
 
+import Render from "@/assets/images/Render.png"
+
 import Email from "@/icons/Email"
 import LinkedIn from "@/icons/LinkedIn";
 import GitHub from "@/icons/GitHub";
@@ -23,6 +25,10 @@ const About = () => {
                 <a href="https://github.com/hydrangea-sh" className="GitHub Fill" target="_blank"><GitHub /></a>
                 <a href="https://discord.com/users/70905440065560576" className="Discord Fill" target="_blank"><Discord /></a>
             </div>
+        </div>
+        <div className="Icon">
+            <img src={Render} alt="Hydrangea" draggable="false" />
+            <div className="Overlay"></div>
         </div>
     </Clamp>
     )

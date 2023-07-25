@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav>
       <Clamp className="Navbar">
-        <h1><span className="Terminal">{">"}</span> <span className="Glow">HYDRANGEA</span><span className="Terminal Blink">_</span></h1>
+        <h1><Link to="#top"><span className="Terminal">{">"}</span> <span className="Glow">HYDRANGEA</span><span className="Terminal Blink">_</span></Link></h1>
         <div className="Right">
           <Link to="#projects">Projects</Link>
           <Link to="#about">About</Link>

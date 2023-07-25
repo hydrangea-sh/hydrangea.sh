@@ -25,7 +25,7 @@ const Phrases: string[] = [
     "Achievement Unlocked",
     "The cake is a lie",
     "GG EZ 🎮",
-    "PogChamp!",
+    "Poggers!",
     "What's up, Doc?",
     "Be right back, Internet 💻",
     "It's over 9000!",
@@ -92,7 +92,7 @@ const Top = () => {
     }, [colorScheme])
 
     return (
-        <Clamp className={`Top ${colorScheme}`}>
+        <Clamp className={`Top ${colorScheme}`} id="#top">
             <div className="Hero">
                 <div className="Text">
                     <p className="HelloWorld" onClick={handleClick}>{randomPhrase}</p>

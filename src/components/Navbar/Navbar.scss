@@ -29,26 +29,29 @@ nav {
     align-items: center;
   
     h1 {
-      cursor: pointer;
-      span.Terminal {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-          monospace;
-        font-weight: 800;
-        position: relative;
-        bottom: 1px;
-        color: var(--text-dimmed);
-  
-        &.Blink {
-          animation: Strobe 2s infinite ease;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        span.Terminal {
+          font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+            monospace;
+          font-weight: 800;
+          position: relative;
+          bottom: 1px;
+          color: var(--text-dimmed);
+    
+          &.Blink {
+            animation: Strobe 2s infinite ease;
+          }
         }
+        span.Glow {
+          transition: text-shadow ease 300ms;
+        }
+        color: var(--accent-color);
+        transition: color 0.2s ease;
+        font-size: 24px;
+        line-height: 24px;
       }
-      span.Glow {
-        transition: text-shadow ease 300ms;
-      }
-      color: var(--accent-color);
-      transition: color 0.2s ease;
-      font-size: 24px;
-      line-height: 24px;
     }
   
     div.Right {
