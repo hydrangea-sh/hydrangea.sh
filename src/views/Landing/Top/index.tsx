@@ -105,6 +105,9 @@ const Top = () => {
                     <a href="https://discord.com/users/70905440065560576" className="Discord" target="_blank"><Discord /></a>
                     </div>
                 </div>
+                <div className="Icon">
+                    <img src="" alt="logo" draggable="false" />
+                </div>
             </div>
         </Clamp>
     )
