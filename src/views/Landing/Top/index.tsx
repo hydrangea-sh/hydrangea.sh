@@ -1,44 +1,44 @@
 import Clamp from "@/components/Clamp"
-
 import LinkedIn from "@/icons/LinkedIn"
 import GitHub from "@/icons/GitHub"
 import Discord from "@/icons/Discord"
 
 import "./Top.scss"
 import "@/global/breakpoints.scss"
+import { useEffect, useState } from "react"
 
 const Phrases: string[] = [
-    // "Arf! Arf!",
-    // "Woof! Woof!",
-    // "Bark! Bark!",
-    // "Hello, World!",
-    // "Lorem ipsum dolor sit amet",
-    // "404 Not Found :3",
-    // "I can haz cheeseburger?",
-    // "It's dangerous to go alone! Take this.",
-    // "I'm feeling lucky",
-    // "May the force be with you",
-    // "Keep calm and carry on",
-    // "One does not simply walk into Mordor",
-    // "So long, and thanks for all the fish",
-    // "Press F to pay respects",
-    // "Achievement Unlocked",
-    // "The cake is a lie",
-    // "GG EZ 🎮",
-    // "PogChamp!",
-    // "What's up, Doc?",
-    // "Be right back, Internet 💻",
-    // "It's over 9000!",
-    // "There's no place like 127.0.0.1",
-    // "You shall not pass!",
-    // "To infinity... and beyond! 🚀",
-    // "Gotta catch 'em all!",
-    // "Would you kindly...",
-    // "It's not a bug, it's a feature! ✨",
-    // "Never gonna give you up",
+    "Arf! Arf!",
+    "Woof! Woof!",
+    "Bark! Bark!",
+    "Hello, World!",
+    "Lorem ipsum dolor sit amet",
+    "404 Not Found :3",
+    "I can haz cheeseburger?",
+    "It's dangerous to go alone! Take this.",
+    "I'm feeling lucky",
+    "May the force be with you",
+    "Keep calm and carry on",
+    "One does not simply walk into Mordor",
+    "So long, and thanks for all the fish",
+    "Press F to pay respects",
+    "Achievement Unlocked",
+    "The cake is a lie",
+    "GG EZ 🎮",
+    "PogChamp!",
+    "What's up, Doc?",
+    "Be right back, Internet 💻",
+    "It's over 9000!",
+    "There's no place like 127.0.0.1",
+    "You shall not pass!",
+    "To infinity... and beyond! 🚀",
+    "Gotta catch 'em all!",
+    "Would you kindly...",
+    "It's not a bug, it's a feature! ✨",
+    "Never gonna give you up",
     "BLÅHAJ-friendly 🦈💙",
-    "Light mode is better ⚪️",
-    "Dark mode is better ⚫️",
+    "Dark mode FTW ⚫️",
+    "Hello, World!"
 ]
 
 const getRandomPhrase = () => {
@@ -47,11 +47,52 @@ const getRandomPhrase = () => {
 }
 
 const Top = () => {
+
+    const [colorScheme, setColorScheme] = useState("dark");
+    const randomPhrase = getRandomPhrase();
+
+    const handleClick = () => {
+        if (colorScheme === "dark") {
+            setColorScheme("light");
+        } else if (colorScheme === "light") {
+            setColorScheme("blahaj");
+        } else if (colorScheme === "blahaj") {
+            setColorScheme("dark");
+        }
+    }
+
+    useEffect(() => {
+        // set CSS variables depending on the color scheme
+        const root = document.documentElement;
+        if (colorScheme === 'dark') {
+            root.style.setProperty('--background-color', 'var(--background-color-dark)');
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-dark)');
+            root.style.setProperty('--accent-color', 'var(--accent-color-dark)');
+            root.style.setProperty('--text-color', 'var(--text-color-dark)');
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-dark)');
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-dark)');
+        } else if (colorScheme === 'blahaj') {
+            root.style.setProperty('--background-color', 'var(--background-color-blahaj)');
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-blahaj)');
+            root.style.setProperty('--accent-color', 'var(--accent-color-blahaj)');
+            root.style.setProperty('--text-color', 'var(--text-color-blahaj)');
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-blahaj)');
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-blahaj)');
+        } else {
+            root.style.setProperty('--background-color', 'var(--background-color-light)');
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-light)');
+            root.style.setProperty('--accent-color', 'var(--accent-color-light)');
+            root.style.setProperty('--text-color', 'var(--text-color-light)');
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-light)');
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-light)');
+        }
+    }, [colorScheme])
+
     return (
-        <Clamp className="Top">
+        <Clamp className={`Top ${colorScheme}`}>
             <div className="Hero">
                 <div className="Text">
-                    <p className="HelloWorld">{getRandomPhrase()}</p>
+                    <p className="HelloWorld" onClick={handleClick}>{randomPhrase}</p>
                     <h1>Heyo, I'm <span className="Accent">Hydrangea</span></h1>
                     <h1 className="Dimmed">I make things</h1>
                     <p className="Mini">I'm software developer based in Chicago, Illinois. I specialize in developing high-quality, user-friendly websites and applications.</p>

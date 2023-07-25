@@ -25,7 +25,10 @@ div.Top {
       align-items: flex-start;
       justify-content: center;
 
+      user-select: none;
+
       p.HelloWorld {
+        cursor: pointer;
         line-height: 28px;
         font-size: 18px;
         font-family: source-code-pro, Menlo, Monaco,
