@@ -25,7 +25,7 @@ const About = () => {
             </div>
         </div>
         <div className="Icon">
-            <img src="src/assets/temp4x.webp" alt="Hydrangea" draggable="false" />
+            <img src="src/assets/About.webp" alt="Hydrangea" draggable="false" />
             <div className="Overlay"></div>
         </div>
     </Clamp>
