@@ -2,8 +2,6 @@ import Clamp from "@/components/Clamp";
 
 import "./About.scss"
 
-import Render from "@/assets/images/Render.png"
-
 import Email from "@/icons/Email"
 import LinkedIn from "@/icons/LinkedIn";
 import GitHub from "@/icons/GitHub";
@@ -27,7 +25,7 @@ const About = () => {
             </div>
         </div>
         <div className="Icon">
-            <img src={Render} alt="Hydrangea" draggable="false" />
+            <img src="" alt="Hydrangea" draggable="false" />
             <div className="Overlay"></div>
         </div>
     </Clamp>
