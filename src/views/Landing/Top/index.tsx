@@ -8,10 +8,10 @@ import "@/global/breakpoints.scss"
 import { useEffect, useState } from "react"
 
 const Phrases: string[] = [
-    "Arf! Arf!",
-    "Woof! Woof!",
-    "Bark! Bark!",
-    "Hello, World!",
+    "Arf! Arf! 🐶",
+    "Woof! Woof! 🐾",
+    "Bark! Bark! 🐕",
+    "Hello, World! 🌎",
     "Lorem ipsum dolor sit amet",
     "404 Not Found :3",
     "I can haz cheeseburger?",
@@ -67,6 +67,7 @@ const Top = () => {
         if (colorScheme === 'dark') {
             root.style.setProperty('--background-color', 'var(--background-color-dark)');
             root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-dark)');
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-dark)');
             root.style.setProperty('--accent-color', 'var(--accent-color-dark)');
             root.style.setProperty('--text-color', 'var(--text-color-dark)');
             root.style.setProperty('--text-dimmed', 'var(--text-dimmed-dark)');
@@ -74,6 +75,7 @@ const Top = () => {
         } else if (colorScheme === 'blahaj') {
             root.style.setProperty('--background-color', 'var(--background-color-blahaj)');
             root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-blahaj)');
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-blahaj)');
             root.style.setProperty('--accent-color', 'var(--accent-color-blahaj)');
             root.style.setProperty('--text-color', 'var(--text-color-blahaj)');
             root.style.setProperty('--text-dimmed', 'var(--text-dimmed-blahaj)');
@@ -81,6 +83,7 @@ const Top = () => {
         } else {
             root.style.setProperty('--background-color', 'var(--background-color-light)');
             root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-light)');
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-light)');
             root.style.setProperty('--accent-color', 'var(--accent-color-light)');
             root.style.setProperty('--text-color', 'var(--text-color-light)');
             root.style.setProperty('--text-dimmed', 'var(--text-dimmed-light)');

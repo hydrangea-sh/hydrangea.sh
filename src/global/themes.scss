@@ -11,6 +11,7 @@
   /* Light theme */
   --background-color-light: #F1F1F1;
   --scrollbar-color-light: #000000;
+  --scrollbar-track-color-light: #F1F1F1;
   --accent-color-light: #aa78a6;
   --text-color-light: #000000;
   --text-dimmed-light: #808080;
@@ -20,6 +21,7 @@
   /* Dark theme */
   --background-color-dark: #000000;
   --scrollbar-color-dark: #F1F1F1;
+  --scrollbar-track-color-dark: #000000;
   --accent-color-dark: #aa78a6;
   --text-color-dark: #F1F1F1;
   --text-dimmed-dark: #808080;
@@ -28,16 +30,18 @@
 
   /* Blahaj theme */
   --background-color-blahaj: #0072bc;
-  --scrollbar-color-blahaj: #F1F1F1;
-  --accent-color-blahaj: #D3F2FF;
-  --text-color-blahaj: #F1F1F1;
-  --text-dimmed-blahaj: #B8D0D3;
-  --text-dimmed-more-blahaj: #B8D0D3;
+  --scrollbar-color-blahaj: #fafafa;
+  --scrollbar-track-color-blahaj: #99c6e4;
+  --accent-color-blahaj: #99c6e4;
+  --text-color-blahaj: #fafafa;
+  --text-dimmed-blahaj: #d4e2e4;
+  --text-dimmed-more-blahaj: #d4e2e4;
   --glow-enabled-blahaj: 0;
 
   /* Current theme */
   --background-color: var(--background-color-blahaj);
   --scrollbar-color: var(--scrollbar-color-blahaj);
+  --scrollbar-track-color: var(--scrollbar-track-color-blahaj);
   --accent-color: var(--accent-color-blahaj);
   --text-color: var(--text-color-blahaj);
   --text-dimmed: var(--text-dimmed-blahaj);
@@ -48,6 +52,7 @@
 .light-theme {
   --background-color: var(--background-color-light);
   --scrollbar-color: var(--scrollbar-color-light);
+  --scrollbar-track-color: var(--scrollbar-track-color-light);
   --accent-color: var(--accent-color-light);
   --text-color: var(--text-color-light);
   --text-dimmed: var(--text-dimmed-light);
@@ -58,6 +63,7 @@
 .dark-theme {
   --background-color: var(--background-color-dark);
   --scrollbar-color: var(--scrollbar-color-dark);
+  --scrollbar-track-color: var(--scrollbar-track-color-dark);
   --accent-color: var(--accent-color-dark);
   --text-color: var(--text-color-dark);
   --text-dimmed: var(--text-dimmed-dark);
@@ -68,6 +74,7 @@
 .blahaj-theme {
   --background-color: var(--background-color-blahaj);
   --scrollbar-color: var(--scrollbar-color-blahaj);
+  --scrollbar-track-color: var(--scrollbar-track-color-blahaj);
   --accent-color: var(--accent-color-blahaj);
   --text-color: var(--text-color-blahaj);
   --text-dimmed: var(--text-dimmed-blahaj);
