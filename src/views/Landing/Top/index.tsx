@@ -6,12 +6,14 @@ import Discord from "@/icons/Discord"
 
 import "./Top.scss"
 
+//add an array for rando phrase in hello world
+
 const Top = () => {
     return (
         <Clamp className="Top">
             <div className="Hero">
                 <div className="Text">
-                    <p className="HelloWorld">Hello World!</p>
+                    <p className="HelloWorld">Arf! Arf!</p>
                     <h1>Heyo, I'm <span className="Accent">Hydrangea</span></h1>
                     <h1 className="Dimmed">I make things</h1>
                     <p className="ShortAbout">I'm software developer based in Chicago, Illinois. I specialize in developing high-quality, user-friendly websites and applications.</p>
@@ -25,6 +27,5 @@ const Top = () => {
         </Clamp>
     )
 }
-
 
 export default Top
