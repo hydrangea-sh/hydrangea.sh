@@ -16,13 +16,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-::-user-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -48,13 +41,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  // Disable website text selection
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version */
-
   overflow-x: hidden;
 }
 
