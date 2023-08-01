@@ -95,7 +95,7 @@ const Top = () => {
             <div className="Hero">
                 <div className="Text">
                     <p className="HelloWorld" onClick={handleClick}>{randomPhrase}</p>
-                    <h1>Heyo, I'm <span className="Accent">Hydrangea</span></h1>
+                    <h1>Heyo, I'm <span className="Accent">Elizabeth</span></h1>
                     <h1 className="Dimmed">I make things</h1>
                     <p className="Mini">I'm software developer based in Chicago, Illinois. I specialize in developing high-quality, user-friendly websites and applications.</p>
                     <div className="Socials">
