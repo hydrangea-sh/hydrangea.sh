@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 import Clamp from "@/components/Clamp"
 import LinkedIn from "@/icons/LinkedIn"
 import GitHub from "@/icons/GitHub"
@@ -5,7 +7,6 @@ import Discord from "@/icons/Discord"
 
 import "./Top.scss"
 import "@/global/breakpoints.scss"
-import { useEffect, useState } from "react"
 
 const Phrases: string[] = [
     "Arf! Arf! 🐶",
