@@ -1,4 +1,6 @@
 import Clamp from "@/components/Clamp";
+import Profile from '@/assets/Profile.webp'
+
 
 import "./About.scss"
 
@@ -25,7 +27,7 @@ const About = () => {
             </div>
         </div>
         <div className="Icon">
-            <img src="src/assets/About.webp" alt="Hydrangea" draggable="false" />
+            <img src={Profile} alt="Hydrangea" draggable="false" />
             <div className="Overlay"></div>
         </div>
     </Clamp>
