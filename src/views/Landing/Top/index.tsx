@@ -4,7 +4,7 @@ import Clamp from "@/components/Clamp"
 import LinkedIn from "@/icons/LinkedIn"
 import GitHub from "@/icons/GitHub"
 import Discord from "@/icons/Discord"
-import Logo from "@/assets/favicon.webp"
+import Logo from "@/assets/logo.webp"
 
 import "./Top.scss"
 import "@/global/breakpoints.scss"
