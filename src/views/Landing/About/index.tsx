@@ -1,13 +1,13 @@
-import Clamp from "@/components/Clamp";
-import Profile from "@/assets/profile.webp";
+import Clamp from "@/components/Clamp"
+import Profile from "@/assets/profile.webp"
 
 
 import "./About.scss"
 
 import Email from "@/icons/Email"
-import LinkedIn from "@/icons/LinkedIn";
-import GitHub from "@/icons/GitHub";
-import Discord from "@/icons/Discord";
+import LinkedIn from "@/icons/LinkedIn"
+import GitHub from "@/icons/GitHub"
+import Discord from "@/icons/Discord"
 
 const About = () => {
     return (
