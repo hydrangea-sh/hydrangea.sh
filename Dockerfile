@@ -12,6 +12,7 @@ WORKDIR /app
 # Set production environment
 ENV NODE_ENV="production"
 
+
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
@@ -40,9 +41,6 @@ RUN npm install -g serve
 
 # Copy built application from the /dist directory
 COPY --from=build /app/dist /app
-
-# Copy assets to the appropriate directory in the final image
-COPY --from=build /app/src/assets /app/assets
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
