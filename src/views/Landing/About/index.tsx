@@ -1,5 +1,5 @@
 import Clamp from "@/components/Clamp";
-import Profile from "@/assets/Profile.webp";
+import Profile from "@/assets/profile.webp";
 
 
 import "./About.scss"
