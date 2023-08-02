@@ -129,10 +129,9 @@ div.About {
     position: relative;
     img {
       float: right;
-      max-width: 75%;
+      max-width: 100%;
       height: auto;
       display: block;
-      margin-right: 4rem;
 
       @include md {
         max-width: 85%;
