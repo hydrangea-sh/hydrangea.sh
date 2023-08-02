@@ -4,7 +4,7 @@ import Clamp from "@/components/Clamp"
 import LinkedIn from "@/icons/LinkedIn"
 import GitHub from "@/icons/GitHub"
 import Discord from "@/icons/Discord"
-import Logo from "@/assets/logo.webp"
+import Logo from "@/assets/favicon.webp"
 
 import "./Top.scss"
 import "@/global/breakpoints.scss"
@@ -43,52 +43,52 @@ const Phrases: string[] = [
 ]
 
 const getRandomPhrase = () => {
-    const randomIndex = Math.floor(Math.random() * Phrases.length);
-    return Phrases[randomIndex];
+    const randomIndex = Math.floor(Math.random() * Phrases.length)
+    return Phrases[randomIndex]
 }
 
 const Top = () => {
 
-    const [colorScheme, setColorScheme] = useState("dark");
-    const randomPhrase = getRandomPhrase();
+    const [colorScheme, setColorScheme] = useState("dark")
+    const randomPhrase = getRandomPhrase()
 
     const handleClick = () => {
         if (colorScheme === "dark") {
-            setColorScheme("light");
+            setColorScheme("light")
         } else if (colorScheme === "light") {
-            setColorScheme("blahaj");
+            setColorScheme("blahaj")
         } else if (colorScheme === "blahaj") {
-            setColorScheme("dark");
+            setColorScheme("dark")
         }
     }
 
     useEffect(() => {
         // set CSS variables depending on the color scheme
-        const root = document.documentElement;
+        const root = document.documentElement
         if (colorScheme === 'dark') {
-            root.style.setProperty('--background-color', 'var(--background-color-dark)');
-            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-dark)');
-            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-dark)');
-            root.style.setProperty('--accent-color', 'var(--accent-color-dark)');
-            root.style.setProperty('--text-color', 'var(--text-color-dark)');
-            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-dark)');
-            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-dark)');
+            root.style.setProperty('--background-color', 'var(--background-color-dark)')
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-dark)')
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-dark)')
+            root.style.setProperty('--accent-color', 'var(--accent-color-dark)')
+            root.style.setProperty('--text-color', 'var(--text-color-dark)')
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-dark)')
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-dark)')
         } else if (colorScheme === 'blahaj') {
-            root.style.setProperty('--background-color', 'var(--background-color-blahaj)');
-            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-blahaj)');
-            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-blahaj)');
-            root.style.setProperty('--accent-color', 'var(--accent-color-blahaj)');
-            root.style.setProperty('--text-color', 'var(--text-color-blahaj)');
-            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-blahaj)');
-            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-blahaj)');
+            root.style.setProperty('--background-color', 'var(--background-color-blahaj)')
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-blahaj)')
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-blahaj)')
+            root.style.setProperty('--accent-color', 'var(--accent-color-blahaj)')
+            root.style.setProperty('--text-color', 'var(--text-color-blahaj)')
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-blahaj)')
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-blahaj)')
         } else {
-            root.style.setProperty('--background-color', 'var(--background-color-light)');
-            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-light)');
-            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-light)');
-            root.style.setProperty('--accent-color', 'var(--accent-color-light)');
-            root.style.setProperty('--text-color', 'var(--text-color-light)');
-            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-light)');
-            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-light)');
+            root.style.setProperty('--background-color', 'var(--background-color-light)')
+            root.style.setProperty('--scrollbar-color', 'var(--scrollbar-color-light)')
+            root.style.setProperty('--scrollbar-track-color', 'var(--scrollbar-track-color-light)')
+            root.style.setProperty('--accent-color', 'var(--accent-color-light)')
+            root.style.setProperty('--text-color', 'var(--text-color-light)')
+            root.style.setProperty('--text-dimmed', 'var(--text-dimmed-light)')
+            root.style.setProperty('--text-dimmed-more', 'var(--text-dimmed-more-light)')
         }
     }, [colorScheme])
 
