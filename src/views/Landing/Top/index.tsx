@@ -4,6 +4,7 @@ import Clamp from "@/components/Clamp"
 import LinkedIn from "@/icons/LinkedIn"
 import GitHub from "@/icons/GitHub"
 import Discord from "@/icons/Discord"
+import Logo from "@/assets/Logo.webp"
 
 import "./Top.scss"
 import "@/global/breakpoints.scss"
@@ -106,7 +107,7 @@ const Top = () => {
                     </div>
                 </div>
                 <div className="Icon">
-                    <img src="" alt="logo" draggable="false" />
+                    <img src={Logo} alt="logo" draggable="false" />
                 </div>
             </div>
         </Clamp>

@@ -125,13 +125,14 @@ div.About {
   div.Icon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     position: relative;
     img {
       float: right;
       max-width: 75%;
       height: auto;
       display: block;
+      margin-right: 4rem;
 
       @include md {
         max-width: 85%;
