@@ -112,17 +112,19 @@ div.Top {
       }
 
       img {
-        transform: translate(0px, -16px);
+        transform: translate(0px, -18px);
 
         @include ml {
-          transform: translate(0);
+          transform: translate(0, -25px);
           margin-bottom: 2rem;
+          width: 33%;
         }
 
         width: 65%;
         
 
         @include sm {
+          transform: translate(0);
           width: 45%;
           
         }
