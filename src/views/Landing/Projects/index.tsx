@@ -3,6 +3,10 @@ import Clamp from "@/components/Clamp"
 import GitHub from "@/icons/GitHub"
 import Website from "@/icons/Website"
 
+import Portfolio from "@/assets/portfolio.webp"
+import Todo from "@/assets/todo.webp"
+import Discord from "@/assets/discord.webp"
+
 import "./Projects.scss"
 
 //still need images for the projects....
@@ -20,7 +24,7 @@ export const SpotlightProjectItems: Project[] = [
     {
         name: "Song-Bot",
         description: "A  Discord bot for seamless song sharing regardless of music platform preference.",
-        image: "temp",
+        image: Discord,
         technologies: ["Discord.js", "Node", "TypeScript"],
         repo: "https://github.com/hydrangea-sh/song-bot/",
         website: undefined
@@ -28,7 +32,7 @@ export const SpotlightProjectItems: Project[] = [
     {
         name: "Todo-App",
         description: "An experimental hypermedia-driven todo application using bleeding-edge web technologies.",
-        image: "temp",
+        image: Todo,
         technologies: ["Bun", "Elysia", "Turso", "htmx", "Drizzle", "SQLite", "TypeScript", "Docker", "Fly.io"],
         repo: "https://github.com/hydrangea-sh/todo-app/",
         website: "https://hydrangea-todo.fly.dev/"
@@ -36,7 +40,7 @@ export const SpotlightProjectItems: Project[] = [
     {
         name: "Hydrangea.sh",
         description: "My personal website.",
-        image: "temp",
+        image: Portfolio,
         technologies: ["HTML", "SCSS", "Vite", "React", "TypeScript"],
         repo: "https://github.com/hydrangea-sh/hydrangea.sh/",
         website: "https://hydrangea.sh/"
