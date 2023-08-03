@@ -39,6 +39,7 @@ div.Top {
         margin-block-end: 4px;
       }
 
+      //heyyoo
       h1 {
         font-size: 64px;
         line-height: 64px;
@@ -90,9 +91,11 @@ div.Top {
             width: 40px;
             height: 40px;
             fill: var(--text-dimmed);
+            // Sets transition for hover animation
             transition: fill ease 200ms;
           }
 
+          // Hovering changes the color to contrast more
           &:hover svg {
             fill: var(--text-color);
           }
@@ -111,21 +114,21 @@ div.Top {
         align-items: center;
       }
 
+      // Offset it to the right to account
+      // for transparent border on img.
       img {
-        transform: translate(0px, -18px);
+        transform: translate(-123px, -16px);
 
         @include ml {
-          transform: translate(0, -25px);
-          margin-bottom: 2rem;
-          width: 33%;
+          transform: translate(0);
         }
 
-        width: 65%;
+        width: 240px;
         
 
         @include sm {
-          transform: translate(0);
-          width: 45%;
+          width: 220px;
+          transform: translate(0, -32px);
           
         }
       }
