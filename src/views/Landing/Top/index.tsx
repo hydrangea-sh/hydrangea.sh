@@ -11,7 +11,6 @@ import "@/global/breakpoints.scss"
 
 const Phrases: string[] = [
     "Arf! Arf! 🐶",
-    "Woof! Woof! 🐾",
     "Bark! Bark! 🐕",
     "Hello, World! 🌎",
     "Lorem ipsum dolor sit amet 📜",

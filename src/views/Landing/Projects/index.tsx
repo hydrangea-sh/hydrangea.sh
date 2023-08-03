@@ -23,7 +23,7 @@ export interface Project {
 export const SpotlightProjectItems: Project[] = [
     {
         name: "Song-Bot",
-        description: "A  Discord bot for seamless song sharing regardless of music platform preference.",
+        description: "A Discord bot that converts music links between Spotify, Apple Music, YouTube Music, and Amazon Music, enabling platform-agnostic music sharing within a server.",
         image: Discord,
         technologies: ["Discord.js", "Node", "TypeScript"],
         repo: "https://github.com/hydrangea-sh/song-bot/",
