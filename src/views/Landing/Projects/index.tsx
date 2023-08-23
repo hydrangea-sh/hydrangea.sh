@@ -36,15 +36,15 @@ export const SpotlightProjectItems: Project[] = [
         image: Todo,
         technologies: ["Bun", "Elysia", "Turso", "htmx", "Drizzle", "SQLite", "TypeScript", "Docker", "Fly.io"],
         repo: "https://github.com/hydrangea-sh/todo-app/",
-        website: "https://hydrangea-todo.fly.dev/"
+        website: "https://todo.hydrangea.sh/"
     },
     {
-        name: "Weather-Widget",
+        name: "Weather-App",
         description: "A simple weather application.",
         image: Weather,
         technologies: ["Angular", "Typescript", "OpenWeatherMap API"],
         repo: "https://github.com/hydrangea-sh/Angular-Weather-App/",
-        website: "https://hydrangea.sh/"
+        website: "https://weather.hydrangea.sh/"
     },
     {
         name: "Hydrangea.sh",
