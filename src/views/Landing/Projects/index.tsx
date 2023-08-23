@@ -6,6 +6,7 @@ import Website from "@/icons/Website"
 import Portfolio from "@/assets/portfolio.webp"
 import Todo from "@/assets/todo.webp"
 import Discord from "@/assets/discord.webp"
+import Weather from "@/assets/weather.webp"
 
 import "./Projects.scss"
 
@@ -36,6 +37,14 @@ export const SpotlightProjectItems: Project[] = [
         technologies: ["Bun", "Elysia", "Turso", "htmx", "Drizzle", "SQLite", "TypeScript", "Docker", "Fly.io"],
         repo: "https://github.com/hydrangea-sh/todo-app/",
         website: "https://hydrangea-todo.fly.dev/"
+    },
+    {
+        name: "Weather-Widget",
+        description: "A simple weather application.",
+        image: Weather,
+        technologies: ["Angular", "Typescript", "OpenWeatherMap API"],
+        repo: "https://github.com/hydrangea-sh/Angular-Weather-App/",
+        website: "https://hydrangea.sh/"
     },
     {
         name: "Hydrangea.sh",
