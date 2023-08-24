@@ -1,10 +1,11 @@
-@import "@/global/breakpoints.scss";
+
+
+@import '@/global/breakpoints.scss';
 
 div.Projects {
   padding: 4rem 0;
 
-  h3,
-  p.Subtitle {
+  h3, p.Subtitle {
     text-align: center;
   }
 
