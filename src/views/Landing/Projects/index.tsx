@@ -32,23 +32,23 @@ export const SpotlightProjectItems: Project[] = [
     },
     {
         name: "Todo-App",
-        description: "An experimental hypermedia-driven todo application using bleeding-edge web technologies.",
+        description: " An experimental hypermedia-driven todo application using bleeding-edge web technologies. This app helps me manage tasks easily while exploring new web tech.",
         image: Todo,
-        technologies: ["Bun", "Elysia", "Turso", "htmx", "Drizzle", "SQLite", "TypeScript", "Docker", "Fly.io"],
+        technologies: ["Bun", "Elysia", "htmx", "Drizzle", "SQLite", "Docker"],
         repo: "https://github.com/hydrangea-sh/todo-app/",
         website: "https://hydrangea-todo.fly.dev"
     },
     {
         name: "Weather-App",
-        description: "A simple weather application.",
+        description: "A user-friendly weather web app offering real-time current conditions, detailed forecasts, and insights to help you plan your day seamlessly",
         image: Weather,
-        technologies: ["Angular", "Typescript", "OpenWeatherMap API"],
+        technologies: ["Angular", "Typescript", "Rapid API"],
         repo: "https://github.com/hydrangea-sh/Angular-Weather-App/",
         website: "https://hydrangea-weather.fly.dev"
     },
     {
         name: "Hydrangea.sh",
-        description: "My personal website.",
+        description: "Hydrangea.sh is my personal website where I display my projects and share some of my tech experiences.",
         image: Portfolio,
         technologies: ["HTML", "SCSS", "Vite", "React", "TypeScript"],
         repo: "https://github.com/hydrangea-sh/hydrangea.sh/",
